@@ -32,34 +32,34 @@
             this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBoxBitmap = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxAddLine = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxCoordX = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxCoordY = new System.Windows.Forms.TextBox();
             this.buttonDraw = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBoxDeleteFigure = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxDeletedFigure = new System.Windows.Forms.ComboBox();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBoxMoveToFigure = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.buttonMoveTo = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxCoordOffsetX = new System.Windows.Forms.TextBox();
+            this.textBoxCoordOffsetY = new System.Windows.Forms.TextBox();
             this.tableLayoutPanelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBitmap)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxAddLine.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.groupBoxDeleteFigure.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.groupBoxMoveToFigure.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -95,9 +95,9 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.groupBox1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.groupBox4, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.groupBox5, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.groupBoxAddLine, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.groupBoxDeleteFigure, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.groupBoxMoveToFigure, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -108,16 +108,17 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(167, 504);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // groupBox1
+            // groupBoxAddLine
             // 
-            this.groupBox1.Controls.Add(this.tableLayoutPanel3);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(161, 195);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Добавить фигуру";
+            this.groupBoxAddLine.Controls.Add(this.tableLayoutPanel3);
+            this.groupBoxAddLine.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxAddLine.Location = new System.Drawing.Point(3, 3);
+            this.groupBoxAddLine.Name = "groupBoxAddLine";
+            this.groupBoxAddLine.Size = new System.Drawing.Size(161, 195);
+            this.groupBoxAddLine.TabIndex = 0;
+            this.groupBoxAddLine.TabStop = false;
+            this.groupBoxAddLine.Text = "Добавить фигуру";
+            this.groupBoxAddLine.Visible = false;
             // 
             // tableLayoutPanel3
             // 
@@ -138,7 +139,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textBoxCoordX);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
@@ -147,18 +148,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Введите X:";
             // 
-            // textBox1
+            // textBoxCoordX
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 18);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 31);
-            this.textBox1.TabIndex = 0;
+            this.textBoxCoordX.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxCoordX.Location = new System.Drawing.Point(3, 18);
+            this.textBoxCoordX.Multiline = true;
+            this.textBoxCoordX.Name = "textBoxCoordX";
+            this.textBoxCoordX.Size = new System.Drawing.Size(143, 31);
+            this.textBoxCoordX.TabIndex = 0;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.textBoxCoordY);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(3, 61);
             this.groupBox3.Name = "groupBox3";
@@ -167,14 +168,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Введите Y:";
             // 
-            // textBox2
+            // textBoxCoordY
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(3, 18);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 31);
-            this.textBox2.TabIndex = 0;
+            this.textBoxCoordY.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxCoordY.Location = new System.Drawing.Point(3, 18);
+            this.textBoxCoordY.Multiline = true;
+            this.textBoxCoordY.Name = "textBoxCoordY";
+            this.textBoxCoordY.Size = new System.Drawing.Size(143, 31);
+            this.textBoxCoordY.TabIndex = 0;
             // 
             // buttonDraw
             // 
@@ -187,22 +188,23 @@
             this.buttonDraw.UseVisualStyleBackColor = true;
             this.buttonDraw.Click += new System.EventHandler(this.buttonDraw_Click);
             // 
-            // groupBox4
+            // groupBoxDeleteFigure
             // 
-            this.groupBox4.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(3, 204);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(161, 94);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Удалить фигуру";
+            this.groupBoxDeleteFigure.Controls.Add(this.tableLayoutPanel1);
+            this.groupBoxDeleteFigure.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxDeleteFigure.Location = new System.Drawing.Point(3, 204);
+            this.groupBoxDeleteFigure.Name = "groupBoxDeleteFigure";
+            this.groupBoxDeleteFigure.Size = new System.Drawing.Size(161, 94);
+            this.groupBoxDeleteFigure.TabIndex = 1;
+            this.groupBoxDeleteFigure.TabStop = false;
+            this.groupBoxDeleteFigure.Text = "Удалить фигуру";
+            this.groupBoxDeleteFigure.Visible = false;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.comboBoxDeletedFigure, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonDelete, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 18);
@@ -213,16 +215,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(155, 73);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // comboBox1
+            // comboBoxDeletedFigure
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox1.Size = new System.Drawing.Size(149, 24);
-            this.comboBox1.TabIndex = 0;
+            this.comboBoxDeletedFigure.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxDeletedFigure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxDeletedFigure.FormattingEnabled = true;
+            this.comboBoxDeletedFigure.Location = new System.Drawing.Point(3, 3);
+            this.comboBoxDeletedFigure.Name = "comboBoxDeletedFigure";
+            this.comboBoxDeletedFigure.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBoxDeletedFigure.Size = new System.Drawing.Size(149, 24);
+            this.comboBoxDeletedFigure.TabIndex = 0;
             // 
             // buttonDelete
             // 
@@ -235,16 +237,17 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // groupBox5
+            // groupBoxMoveToFigure
             // 
-            this.groupBox5.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox5.Location = new System.Drawing.Point(3, 304);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(161, 197);
-            this.groupBox5.TabIndex = 2;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Перемещение фигуры";
+            this.groupBoxMoveToFigure.Controls.Add(this.tableLayoutPanel4);
+            this.groupBoxMoveToFigure.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxMoveToFigure.Location = new System.Drawing.Point(3, 304);
+            this.groupBoxMoveToFigure.Name = "groupBoxMoveToFigure";
+            this.groupBoxMoveToFigure.Size = new System.Drawing.Size(161, 197);
+            this.groupBoxMoveToFigure.TabIndex = 2;
+            this.groupBoxMoveToFigure.TabStop = false;
+            this.groupBoxMoveToFigure.Text = "Перемещение фигуры";
+            this.groupBoxMoveToFigure.Visible = false;
             // 
             // tableLayoutPanel4
             // 
@@ -265,7 +268,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.textBox3);
+            this.groupBox6.Controls.Add(this.textBoxCoordOffsetX);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(3, 3);
             this.groupBox6.Name = "groupBox6";
@@ -276,7 +279,7 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.textBox4);
+            this.groupBox7.Controls.Add(this.textBoxCoordOffsetY);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Location = new System.Drawing.Point(3, 61);
             this.groupBox7.Name = "groupBox7";
@@ -296,23 +299,23 @@
             this.buttonMoveTo.UseVisualStyleBackColor = true;
             this.buttonMoveTo.Click += new System.EventHandler(this.buttonMoveTo_Click);
             // 
-            // textBox3
+            // textBoxCoordOffsetX
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(3, 18);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 31);
-            this.textBox3.TabIndex = 0;
+            this.textBoxCoordOffsetX.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxCoordOffsetX.Location = new System.Drawing.Point(3, 18);
+            this.textBoxCoordOffsetX.Multiline = true;
+            this.textBoxCoordOffsetX.Name = "textBoxCoordOffsetX";
+            this.textBoxCoordOffsetX.Size = new System.Drawing.Size(143, 31);
+            this.textBoxCoordOffsetX.TabIndex = 0;
             // 
-            // textBox4
+            // textBoxCoordOffsetY
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(3, 18);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(143, 31);
-            this.textBox4.TabIndex = 0;
+            this.textBoxCoordOffsetY.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxCoordOffsetY.Location = new System.Drawing.Point(3, 18);
+            this.textBoxCoordOffsetY.Multiline = true;
+            this.textBoxCoordOffsetY.Name = "textBoxCoordOffsetY";
+            this.textBoxCoordOffsetY.Size = new System.Drawing.Size(143, 31);
+            this.textBoxCoordOffsetY.TabIndex = 0;
             // 
             // FormFigure
             // 
@@ -329,18 +332,19 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Фигуры";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormFigure_KeyDown);
             this.tableLayoutPanelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBitmap)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.groupBoxAddLine.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
+            this.groupBoxDeleteFigure.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
+            this.groupBoxMoveToFigure.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
@@ -355,24 +359,24 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMain;
         private System.Windows.Forms.PictureBox pictureBoxBitmap;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxAddLine;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxCoordX;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxCoordY;
         private System.Windows.Forms.Button buttonDraw;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBoxDeleteFigure;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBoxMoveToFigure;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button buttonMoveTo;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxCoordOffsetX;
+        private System.Windows.Forms.TextBox textBoxCoordOffsetY;
+        public System.Windows.Forms.ComboBox comboBoxDeletedFigure;
     }
 }
 
