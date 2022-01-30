@@ -30,14 +30,14 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxCoordX = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxCoordY = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBoxW = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBoxH = new System.Windows.Forms.TextBox();
             this.buttonDrawRectangle = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -68,7 +68,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxCoordX);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
@@ -77,9 +77,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Введите X:";
             // 
+            // textBoxCoordX
+            // 
+            this.textBoxCoordX.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxCoordX.Location = new System.Drawing.Point(3, 18);
+            this.textBoxCoordX.Multiline = true;
+            this.textBoxCoordX.Name = "textBoxCoordX";
+            this.textBoxCoordX.Size = new System.Drawing.Size(370, 43);
+            this.textBoxCoordX.TabIndex = 0;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBoxCoordY);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(3, 73);
             this.groupBox2.Name = "groupBox2";
@@ -88,9 +97,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Введите Y:";
             // 
+            // textBoxCoordY
+            // 
+            this.textBoxCoordY.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxCoordY.Location = new System.Drawing.Point(3, 18);
+            this.textBoxCoordY.Multiline = true;
+            this.textBoxCoordY.Name = "textBoxCoordY";
+            this.textBoxCoordY.Size = new System.Drawing.Size(370, 43);
+            this.textBoxCoordY.TabIndex = 0;
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.textBoxW);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(3, 143);
             this.groupBox3.Name = "groupBox3";
@@ -99,9 +117,18 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Введите W:";
             // 
+            // textBoxW
+            // 
+            this.textBoxW.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxW.Location = new System.Drawing.Point(3, 18);
+            this.textBoxW.Multiline = true;
+            this.textBoxW.Name = "textBoxW";
+            this.textBoxW.Size = new System.Drawing.Size(370, 43);
+            this.textBoxW.TabIndex = 0;
+            // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox4);
+            this.groupBox4.Controls.Add(this.textBoxH);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(3, 213);
             this.groupBox4.Name = "groupBox4";
@@ -109,6 +136,15 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Введите H:";
+            // 
+            // textBoxH
+            // 
+            this.textBoxH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxH.Location = new System.Drawing.Point(3, 18);
+            this.textBoxH.Multiline = true;
+            this.textBoxH.Name = "textBoxH";
+            this.textBoxH.Size = new System.Drawing.Size(370, 43);
+            this.textBoxH.TabIndex = 0;
             // 
             // buttonDrawRectangle
             // 
@@ -121,42 +157,6 @@
             this.buttonDrawRectangle.Text = "Нарисовать";
             this.buttonDrawRectangle.UseVisualStyleBackColor = true;
             this.buttonDrawRectangle.Click += new System.EventHandler(this.buttonDrawRectangle_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 18);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(370, 43);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(3, 18);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(370, 43);
-            this.textBox2.TabIndex = 0;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(3, 18);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(370, 43);
-            this.textBox3.TabIndex = 0;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(3, 18);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(370, 43);
-            this.textBox4.TabIndex = 0;
             // 
             // FormDrawRectangle
             // 
@@ -189,9 +189,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button buttonDrawRectangle;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxCoordX;
+        private System.Windows.Forms.TextBox textBoxCoordY;
+        private System.Windows.Forms.TextBox textBoxW;
+        private System.Windows.Forms.TextBox textBoxH;
     }
 }

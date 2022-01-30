@@ -55,19 +55,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDeleteFigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteFigure.Designer.cs">
+      <DependentUpon>FormDeleteFigure.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDrawRectangle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDrawRectangle.Designer.cs">
       <DependentUpon>FormDrawRectangle.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMoveToFigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMoveToFigure.Designer.cs">
+      <DependentUpon>FormMoveToFigure.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteFigure.resx">
+      <DependentUpon>FormDeleteFigure.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDrawRectangle.resx">
       <DependentUpon>FormDrawRectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMoveToFigure.resx">
+      <DependentUpon>FormMoveToFigure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
