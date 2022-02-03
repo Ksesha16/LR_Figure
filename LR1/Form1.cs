@@ -20,6 +20,8 @@ namespace LR1
         public FormFigure()
         {
             InitializeComponent();
+            FormDeleteFigure = new FormDeleteFigure(this);
+            FormMoveToFigure = new FormMoveToFigure(this);
             this._bitmap = new Bitmap(pictureBoxBitmap.ClientSize.Width, pictureBoxBitmap.ClientSize.Height);
             this._pen = new Pen(Color.Black, 5);
             Init.bitmap = this._bitmap;
@@ -38,14 +40,11 @@ namespace LR1
             }
             else if(e.KeyCode == Keys.D)
             {
-                FormDeleteFigure = new FormDeleteFigure(this);
-                FormDeleteFigure.Visible = true;
+                FormDeleteFigure.ShowDialog();
             }
             else if(e.KeyCode == Keys.M)
             {
-
-                FormMoveToFigure = new FormMoveToFigure();
-                FormMoveToFigure.Visible = true;
+                FormMoveToFigure.ShowDialog();
             }
         }
     }

@@ -85,6 +85,7 @@
             this.textBoxCoordX.Name = "textBoxCoordX";
             this.textBoxCoordX.Size = new System.Drawing.Size(370, 43);
             this.textBoxCoordX.TabIndex = 0;
+            this.textBoxCoordX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCoordX_KeyPress);
             // 
             // groupBox2
             // 
@@ -105,6 +106,7 @@
             this.textBoxCoordY.Name = "textBoxCoordY";
             this.textBoxCoordY.Size = new System.Drawing.Size(370, 43);
             this.textBoxCoordY.TabIndex = 0;
+            this.textBoxCoordY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCoordY_KeyPress);
             // 
             // groupBox3
             // 
@@ -125,6 +127,7 @@
             this.textBoxW.Name = "textBoxW";
             this.textBoxW.Size = new System.Drawing.Size(370, 43);
             this.textBoxW.TabIndex = 0;
+            this.textBoxW.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxW_KeyPress);
             // 
             // groupBox4
             // 
@@ -145,6 +148,7 @@
             this.textBoxH.Name = "textBoxH";
             this.textBoxH.Size = new System.Drawing.Size(370, 43);
             this.textBoxH.TabIndex = 0;
+            this.textBoxH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxH_KeyPress);
             // 
             // buttonDrawRectangle
             // 

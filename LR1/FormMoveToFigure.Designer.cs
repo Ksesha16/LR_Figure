@@ -54,7 +54,6 @@
             this.groupBoxMoveToFigure.TabIndex = 3;
             this.groupBoxMoveToFigure.TabStop = false;
             this.groupBoxMoveToFigure.Text = "Перемещение фигуры";
-            this.groupBoxMoveToFigure.Visible = false;
             // 
             // tableLayoutPanel4
             // 
@@ -94,6 +93,7 @@
             this.textBoxCoordOffsetX.Name = "textBoxCoordOffsetX";
             this.textBoxCoordOffsetX.Size = new System.Drawing.Size(164, 31);
             this.textBoxCoordOffsetX.TabIndex = 0;
+            this.textBoxCoordOffsetX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCoordOffsetX_KeyPress);
             // 
             // groupBox7
             // 
@@ -114,6 +114,7 @@
             this.textBoxCoordOffsetY.Name = "textBoxCoordOffsetY";
             this.textBoxCoordOffsetY.Size = new System.Drawing.Size(164, 31);
             this.textBoxCoordOffsetY.TabIndex = 0;
+            this.textBoxCoordOffsetY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCoordOffsetY_KeyPress);
             // 
             // buttonMoveTo
             // 
@@ -168,8 +169,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBoxMoveToFigure;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TextBox textBoxCoordOffsetX;
@@ -177,6 +176,7 @@
         private System.Windows.Forms.TextBox textBoxCoordOffsetY;
         private System.Windows.Forms.Button buttonMoveTo;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBoxFigures;
+        public System.Windows.Forms.GroupBox groupBoxMoveToFigure;
+        public System.Windows.Forms.ComboBox comboBoxFigures;
     }
 }

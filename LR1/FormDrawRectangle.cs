@@ -15,12 +15,15 @@ namespace LR1
     {
         private FormFigure _formFigure;
         private string _text;
+        private Random _random = new Random();
         public FormDrawRectangle(FormFigure formFigure, string text)
         {
             InitializeComponent();
             _formFigure = formFigure;
+            RandomGenerateRectangle();
+            
             _text = text;
-            if(_text == "Rectangle")
+            if (_text == "Rectangle")
             {
                 tableLayoutPanel1.Visible = true;
                 groupBox1.Text = "Введите X:";
@@ -29,7 +32,7 @@ namespace LR1
                 groupBox4.Text = "Введите H:";
                 Text = "Прямоугольник";
             }
-            else if(_text == "Line")
+            else if (_text == "Line")
             {
                 tableLayoutPanel1.Visible = true;
                 groupBox1.Text = "Введите X1:";
@@ -40,6 +43,14 @@ namespace LR1
             }
         }
 
+        private void RandomGenerateRectangle()
+        {
+            textBoxCoordX.Text = _random.Next(0, this._formFigure.MaximumSize.Width / 2).ToString();
+            textBoxCoordY.Text = _random.Next(0, this._formFigure.MaximumSize.Height / 2).ToString();
+            textBoxH.Text = _random.Next(0, this._formFigure.MaximumSize.Width / 2).ToString();
+            textBoxW.Text = _random.Next(0, this._formFigure.MaximumSize.Height / 2).ToString();
+        }
+
         private void buttonDrawRectangle_Click(object sender, EventArgs e)
         {
             if (_text == "Rectangle")
@@ -48,6 +59,7 @@ namespace LR1
                 rectangle.Draw();
                 ShapeContainer.AddFigure(rectangle);
                 UpdateComboBoxDeletedFigureItems();
+                RandomGenerateRectangle();
             }
             else if(_text == "Line")
             {
@@ -55,16 +67,51 @@ namespace LR1
                 line.Draw();
                 ShapeContainer.AddFigure(line);
                 UpdateComboBoxDeletedFigureItems();
+                RandomGenerateRectangle();
             }
         }
 
         private void UpdateComboBoxDeletedFigureItems()
         {
             FormFigure.FormDeleteFigure.comboBoxDeletedFigure.Items.Clear();
+            FormFigure.FormMoveToFigure.comboBoxFigures.Items.Clear();
             foreach (var item in ShapeContainer.figures)
             {
                 FormFigure.FormDeleteFigure.comboBoxDeletedFigure.Items.Add(item.name);
+                FormFigure.FormMoveToFigure.comboBoxFigures.Items.Add(item.name);
             }
+        }
+
+        private void textBoxCoordX_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            CheckIsDigit(e);
+        }
+
+        public static void CheckIsDigit(KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                return;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxCoordY_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            CheckIsDigit(e);
+        }
+
+        private void textBoxW_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            CheckIsDigit(e);
+        }
+
+        private void textBoxH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            CheckIsDigit(e);
         }
     }
 }

@@ -26,14 +26,27 @@ namespace LR1
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
+            if (comboBoxDeletedFigure.SelectedIndex == -1)
+            {
+                MessageBox.Show("Фигура для удаления не выбрана");
+                return;
+            }
             foreach (Figure figure in ShapeContainer.figures)
             {
                 if(figure.name == comboBoxDeletedFigure.SelectedItem.ToString())
                 {
                     figure.DeleteF(figure, _formFigure.pictureBoxBitmap);
+                    FormFigure.FormDeleteFigure = this;
+                    comboBoxDeletedFigure.Text = "";
                     return;
                 }
             }
+            FormFigure.FormDeleteFigure = this;
+        }
+
+        private void FormDeleteFigure_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormFigure.FormDeleteFigure = this;
         }
     }
 }

@@ -81,6 +81,7 @@
             this.MinimumSize = new System.Drawing.Size(300, 150);
             this.Name = "FormDeleteFigure";
             this.Text = "Форма удаления фигуры";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormDeleteFigure_FormClosed);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

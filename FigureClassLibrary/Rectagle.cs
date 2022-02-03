@@ -34,7 +34,18 @@ namespace FigureClassLibrary
         }
         public override void MoveTo(int x, int y)
         {
-            throw new NotImplementedException();
+            if (OutOfBoundsCheck(x, y))
+            {
+                this.x += x;
+                this.y += y;
+                this.DeleteF(this, Init.pictureBox, false);
+                this.Draw();
+            }
+        }
+
+        private bool OutOfBoundsCheck(int x, int y)
+        {
+            return !((this.x + x < 0 && this.y + y < 0) || (this.y + y < 0) || (this.x + x > Init.pictureBox.Width && this.y + y < 0) || (this.x + this.width + x > Init.pictureBox.Width) || (this.x + x > Init.pictureBox.Width && this.y + y > Init.pictureBox.Height) || (this.y + this.height + y > Init.pictureBox.Height) || (this.x + x < 0 && this.y + y > Init.pictureBox.Height) || (this.x + x < 0));
         }
     }
 }
